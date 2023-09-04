@@ -1,0 +1,15 @@
+.is-dark {
+  --background-grey: var(--dark-sidebar-light-5);
+  --border: var(--dark-sidebar-light-12);
+
+  // override primary dark HSL (#0959FB) // hsl(220, 97%, 51%)
+  --primary-h: 220; /* Hue        */
+  --primary-s: 97%; /* Saturation */
+  --primary-l: 51%; /* Lightness  */
+
+  // override dark-text dark HSL (#a2a5b9) // hsl(232, 14%, 68%)
+  @include colorHsl('dark-text', 232, 14%, 68%);
+
+  // override red HSL (#f92b60) // hsl(345, 94%, 57%)
+  @include colorHsl('red', 324, 100%, 63%);
+}
